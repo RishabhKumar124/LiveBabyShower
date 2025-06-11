@@ -149,28 +149,44 @@
   });
 </script>
   
-
-
-  
   </body>
 </html>
 <script>
   const sparkles = document.querySelectorAll('.baby-sparkle');
 
-  sparkles.forEach((sparkle, i) => {
-    const minLeft = 10;  
+  function randomizeSparkle(sparkle) {
+    // Random horizontal position
+    const minLeft = 10;
     const maxLeft = 90;
     const boundedLeft = minLeft + Math.random() * (maxLeft - minLeft);
     sparkle.style.left = `${boundedLeft}%`;
 
+    // Random delay and duration
     const delay = Math.random() * 2;
-    sparkle.style.animationDelay = `${delay}s`;
+    const duration = 8 + Math.random() * 3;
 
-    const duration = 8 + Math.random() * 5;
+    sparkle.style.animationDelay = `${delay}s`;
     sparkle.style.animationDuration = `${duration}s`;
 
-    // Random scale (0.8x to 1.4x size)
+    // Random scale
     const scale = Math.min(1.4, 0.8 + Math.random() * 0.6);
     sparkle.style.transform = `scale(${scale})`;
+
+    // Force reflow to restart animation cleanly
+    sparkle.style.animationName = 'none';
+    // Reflow trick — forces the browser to recognize the removal
+    void sparkle.offsetWidth;
+    sparkle.style.animationName = 'babyFloatUp';
+
+    return delay + duration;
+  }
+
+  sparkles.forEach((sparkle) => {
+    function loop() {
+      const totalTime = randomizeSparkle(sparkle);
+      setTimeout(loop, totalTime * 1000);
+    }
+
+    loop();
   });
 </script>
