@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Baby Shower RSVP!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sparkle-layer">
+  <img class="baby-sparkle" src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/babyCarSeat.png?v=1749591261120" />
+  <img class="baby-sparkle" src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/babyCrib.png?v=1749591270292" />
+  <img class="baby-sparkle" src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/babyDiaper.png?v=1749591277757" />
+  <img class="baby-sparkle" src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/babyMonitor.png?v=1749591281721" />
+  <img class="baby-sparkle" src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/babyCradle.png?v=1749610229684" />
+    <img class="baby-sparkle" src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/babyPacifier.png?v=1749591287060" />
+    <img class="baby-sparkle" src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/babyToy.webp?v=1749591293495" />
+    <img class="baby-sparkle" src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/babyToy2.png?v=1749591299176" />
+    <img class="baby-sparkle" src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/milkBottle.png?v=1749591313611" />
+    <img class="baby-sparkle" src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/babyShoe.png?v=1749591608519" />
+    <img class="baby-sparkle" src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/babySoccer.png?v=1749610373717" />
+</div>
+  <div class="scattered-photos">
+        <img src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/image1.jpg?v=1749560123333" alt="Fun memory 1" class="img1">
+        <img src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/image2.jpg?v=1749560142944" alt="Fun memory 2" class="img2">
+        <img src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/image6.jpg?v=1749560247336" alt="Fun memory 3" class="img3">
+        <img src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/image3.jpg?v=1749560175082.jpg" alt="Fun memory 4" class="img4">
+        <img src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/image4.jpg?v=1749560197401" alt="Fun memory 5" class="img5">
+        <img src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/1000112556.jpg?v=1749654272895" alt="Fun memory 6" class="img6">
+      </div>
+  <div class="container">
+    <header>
+      <p class="curved-title">Sneha and Rishabh’s</p>
+<!--   <h1 class="heading">Boss Baby Incoming!</h1> -->
+      <h1 class="heading boss-baby-title">
+        <span>B</span><span>o</span><span>s</span><span>s</span> 
+        <span>B</span><span>a</span><span>b</span><span>y</span> 
+        <span>I</span><span>n</span><span>c</span><span>o</span><span>m</span><span>i</span><span>n</span><span>g</span><span>!</span>
+      </h1>
+      <p class="futureDom">Future world-domination plan:</p>
+        <ul class="baby-bullets condensed">
+          <li>
+            <img src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/baby_girl_bullet.gif?v=1749564752378" alt="baby gif" class="emoji-gif" />
+            Arrive</li>
+          <li>
+            <img src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/33541f6fc2ae8b687700ef1ff9587494.gif?v=1749644312232" alt="baby gif" class="emoji-gif" />
+            Melt hearts</li>
+          <li> 
+            <img src="https://cdn.glitch.global/38186d6a-b493-426e-acad-ee921625f602/source.gif?v=1749585378064" alt="baby gif" class="emoji-gif"/>
+            Rule the world</li>
+        </ul>
+      <p class="tagline">Assemble for Snacks and Shenanigans!&nbsp;</p>
+      <!-- small photo gallery scattered across -->
+      
+    </header>
+    <div class="event-details">
+      <p><strong>📅 When:</strong> July 13th, 12 PM – 3 PM</p>
+      <p><strong>📍 Where:</strong> Greater Boston Area</p>
+    </div>
+    <form id="rsvp-form"
+          action="https://formspree.io/f/mvgrkllk"
+          method="POST">
+      <label>
+        🧑 Agent Codename 
+        <input type="text" name="name" required placeholder="e.g., Baadshah"/>
+      </label>
+
+      <label>
+        🕵️ Mission Status (Will You Be Attending?)
+        <select name="attending" required>
+          <option value="">-- Deploy response --</option>
+          <option value="yes">Affirmative, snacks will be secured.</option>
+          <option value="no">Unable to attend, baby duties elsewhere.</option>
+        </select>
+      </label>
+
+      <label>
+        🧍‍♂️🧍‍♀️ Number of Sidekicks (Including you)
+        <input type="number" name="guests" min="1" max="5" placeholder="e.g., 3 (me + 2 fellow baby agents)" />
+      </label>
+
+      <label>
+        🧠 Operation Name Ideas (Baby name suggestions)  
+        <input type="text" name="name" required placeholder="e.g., Womb Raider, Poopzilla"/>
+      </label>
+
+      <button type="submit">📬 Send Intel to HQ!</button>
+    </form>
+
+    <div id="thank-you" class="hidden">
+      <h2>Mission Accepted!</h2>
+      <p>This message will self destruct after a diaper change.</p>
+    </div>
+  </div>
+  
+
+  <script>
+  const isMobile = window.matchMedia("(max-width: 600px)").matches;
+
+  const positions = isMobile
+    ? [
+        { left: "0.2%", top: "2px" },
+        { left: "-1.5%", top: "180px" },
+        { left: "2%", top: "650px" },
+        { left: "78%", top: "8px" },
+        { left: "74%", top: "190px" },
+        { left: "70%", top: "640px" }
+      ]
+    : [
+        { left: "18%", top: "40px" },
+        { left: "3%", top: "260px" },
+        { left: "5%", top: "480px" },
+        { left: "67%", top: "60px" },
+        { left: "78%", top: "240px" },
+        { left: "75%", top: "460px" }
+      ];
+
+  const allImages = document.querySelectorAll('.scattered-photos img');
+
+  allImages.forEach((img) => {
+    img.style.width = isMobile ? "120px" : "150px";
+    img.style.height = isMobile ? "120px" : "150px";
+  });
+
+  allImages.forEach((img, index) => {
+    const pos = positions[index];
+    img.style.left = pos.left;
+    img.style.top = pos.top;
+  });
+
+  let lastUsedPositions = new Array(allImages.length).fill(null);
+
+  allImages.forEach((img, index) => {
+    img.addEventListener("animationiteration", () => {
+      let newPos;
+      let tries = 0;
+
+      do {
+        newPos = positions[Math.floor(Math.random() * positions.length)];
+        tries++;
+      } while (
+        lastUsedPositions.includes(`${newPos.left}-${newPos.top}`) &&
+        tries < 10
+      );
+
+      img.style.left = newPos.left;
+      img.style.top = newPos.top;
+      lastUsedPositions[index] = `${newPos.left}-${newPos.top}`;
+    });
+  });
+</script>
+  
+
+
+  
+  </body>
+</html>
+<script>
+  const sparkles = document.querySelectorAll('.baby-sparkle');
+
+  sparkles.forEach((sparkle, i) => {
+    const minLeft = 10;  
+    const maxLeft = 90;
+    const boundedLeft = minLeft + Math.random() * (maxLeft - minLeft);
+    sparkle.style.left = `${boundedLeft}%`;
+
+    const delay = Math.random() * 2;
+    sparkle.style.animationDelay = `${delay}s`;
+
+    const duration = 8 + Math.random() * 5;
+    sparkle.style.animationDuration = `${duration}s`;
+
+    // Random scale (0.8x to 1.4x size)
+    const scale = Math.min(1.4, 0.8 + Math.random() * 0.6);
+    sparkle.style.transform = `scale(${scale})`;
+  });
+</script>
