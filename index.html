@@ -174,3 +174,32 @@
     sparkle.style.transform = `scale(${scale})`;
   });
 </script>
+<script>
+  const sparkles = document.querySelectorAll('.baby-sparkle');
+
+  function randomizeSparkle(sparkle) {
+    const minLeft = 10;
+    const maxLeft = 90;
+    const boundedLeft = minLeft + Math.random() * (maxLeft - minLeft);
+    sparkle.style.left = `${boundedLeft}%`;
+
+    const delay = Math.random() * 2;
+    sparkle.style.animationDelay = `${delay}s`;
+
+    const duration = 8 + Math.random() * 5;
+    sparkle.style.animationDuration = `${duration}s`;
+
+    const scale = Math.min(1.4, 0.8 + Math.random() * 0.6);
+    sparkle.style.transform = `scale(${scale})`;
+  }
+
+  sparkles.forEach((sparkle) => {
+    // Set initial random values
+    randomizeSparkle(sparkle);
+
+    // Randomize on each animation loop
+    sparkle.addEventListener("animationiteration", () => {
+      randomizeSparkle(sparkle);
+    });
+  });
+</script>
